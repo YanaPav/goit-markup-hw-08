@@ -1,17 +1,9 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
-
 @import './base/common';
+@import './components/container';
 @import './components/section-title';
 
-@import './layout/page-header';
-@import './layout/hero';
-@import './layout/preferences';
-@import './layout/services';
-@import './layout/team';
-@import './layout/clients';
-@import './layout/footer';
+@import './layout/header';
 
 @import './components/backdrop';
-
-@import './layout/portfolio';

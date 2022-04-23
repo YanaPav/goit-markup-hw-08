@@ -22,31 +22,31 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container flex-container">
+      <div class="container page-header__container">
         <nav class="main-nav">
           <a href="./index.html" class="link-reset logo header-logo"
             ><span class="logo logo-accent">Web</span>Studio</a
           >
-          <ul class="ul-reset link-list">
-            <li class="list-item">
+          <ul class="ul-reset nav-list">
+            <li class="nav-list__item">
               <a href="" class="link-reset current nav-link">Студия</a>
             </li>
-            <li class="list-item">
+            <li class="nav-list__item">
               <a href="./portfolio.html" class="link-reset nav-link"
                 >Портфолио</a
               >
             </li>
-            <li class="list-item">
+            <li class="nav-list__item">
               <a href="" class="link-reset nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="ul-reset link-list">
-          <li class="list-item">
+        <ul class="ul-reset header-contact-list">
+          <li class="header-contact-list__item">
             <a
               href="mailto:info@devstudio.com"
-              class="link-reset header-contact-link"
+              class="link-reset header-contact-list__link"
             >
               <svg class="link-icon" width="16" height="12">
                 <use href="./images/icons/sprite.svg#icon-envelope"></use>
@@ -54,8 +54,11 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="list-item">
-            <a href="tel:+380961111111" class="link-reset header-contact-link">
+          <li class="header-contact-list__item">
+            <a
+              href="tel:+380961111111"
+              class="link-reset header-contact-list__lin"
+            >
               <svg class="link-icon" width="10" height="16">
                 <use href="./images/icons/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -63,24 +66,103 @@
             </a>
           </li>
         </ul>
+
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-btn__icon" width="24" height="16">
+            <use href="./images/icons/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="19" height="19">
+              <use href="./images/icons/sprite.svg#mob-menu-close-icon"></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu__wrap">
+            <ul class="ul-reset mobile-nav">
+              <li class="mobile-nav__item">
+                <a href="" class="link-reset current mobile-nav__link">
+                  Студия
+                </a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="./portfolio.html" class="link-reset mobile-nav__link">
+                  Портфолио
+                </a>
+              </li>
+              <li class="mobile-nav__item">
+                <a href="" class="link-reset mobile-nav__link">Контакты</a>
+              </li>
+            </ul>
+
+            <div>
+              <ul class="ul-reset mobile-contact-list">
+                <li class="mobile-contact-list__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="link-reset mobile-contact-list__link-tel"
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mobile-contact-list__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="link-reset mobile-contact-list__link-email"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="ul-reset mobile-menu__soc-list">
+                <li class="mobile-menu__soc-item">
+                  <a href="" class="link-reset mobile-menu__soc-link"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mobile-menu__soc-item">
+                  <a href="" class="link-reset mobile-menu__soc-link"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mobile-menu__soc-item">
+                  <a href="" class="link-reset mobile-menu__soc-link"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mobile-menu__soc-item">
+                  <a href="" class="link-reset mobile-menu__soc-link"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        <h1 class="hero__title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button type="button" class="hero__btn" data-modal-open>
-          Заказать услугу
-        </button>
-      </section>
+      <!-- <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="hero__btn" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
+      </section> -->
 
-      <section class="section preferences">
+      <!-- <section class="section preferences">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
-          <!-- Заголовок скроем стилями -->
           <ul class="ul-reset preferences-list">
             <li class="list-item">
               <div class="preferences-icon-wrap">
@@ -132,13 +214,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section services">
+      <!-- <section class="section services">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="ul-reset services-list">
-            <!-- Если эти картинки должны вести на страници с более детальным описанием каждого вида деятельности, то оборачиваем их в ссылки -->
             <li class="list-item">
               <img
                 src="./images/site.jpg"
@@ -161,12 +242,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <!-- Если сотрудники будут добавляться - избавимся от крайних марджинов отрицательным марджином в ul и добавим возможность переноса строк-->
           <ul class="ul-reset team-list">
             <li class="list-item">
               <img
@@ -373,9 +453,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section clients">
+      <!-- <section class="section clients">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="ul-reset client-list">
@@ -423,10 +503,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="contacts">
           <a href="" class="link-reset logo footer-logo">
@@ -497,9 +577,9 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="close-button" data-modal-close>
           <svg class="close-button-icon">
@@ -584,8 +664,9 @@
           <button type="submit" class="submit-button">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
