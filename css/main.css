@@ -288,6 +288,121 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn,
+  .mobile-menu {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+  .page-header__container {
+    display: flex;
+    padding-bottom: 0;
+    padding-top: 0;
+    align-items: center;
+  }
+  .header-logo {
+    margin-right: 88px;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .nav-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav-list__link {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+    transition: color var(--transition-duration) var(--transition-timing-function);
+  }
+  .nav-list__link:hover, .nav-list__link:focus {
+    color: var(--accent-color);
+  }
+  .header-contact-list {
+    display: block;
+    margin-left: auto;
+  }
+  .header-contact-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .header-contact-list__link {
+    display: flex;
+    align-items: center;
+  }
+  .header-contact-list__link-icon {
+    margin-right: 8px;
+    fill: currentColor;
+  }
+  .header-contact-list__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color var(--transition-duration) var(--transition-timing-function);
+  }
+  .header-contact-list__link:hover, .header-contact-list__link:focus {
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contact-list__link.contact-tel {
+    padding-bottom: 21px;
+  }
+  .header-contact-list__link.contact-email {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .current {
+    color: var(--accent-color);
+  }
+  .current::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .header-contact-list {
+    display: flex;
+    margin-left: auto;
+  }
+  .header-contact-list__link {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    font-size: 14px;
+  }
+  .header-contact-list__link-icon {
+    margin-right: 10px;
+  }
+  .header-contact-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .backdrop {
   position: fixed;
   width: 100%;
