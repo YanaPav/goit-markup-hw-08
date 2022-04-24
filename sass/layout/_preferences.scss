@@ -53,6 +53,10 @@
 
 @media screen and (min-width: 1200px) {
 
+    .section.preferences {
+        padding-bottom: 0;
+    }
+
     .preferences__list {
         display: flex;
     }

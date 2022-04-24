@@ -530,6 +530,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .section.preferences {
+    padding-bottom: 0;
+  }
   .preferences__list {
     display: flex;
   }
@@ -539,6 +542,39 @@ body {
   .preferences__item:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
+}
+
+.services__item {
+  position: relative;
+}
+
+.services__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.services__list {
+  display: flex;
+}
+
+.services__descr {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
 
 .backdrop {
