@@ -113,10 +113,6 @@ body {
   justify-content: space-between;
 }
 
-.nav-list, .header-contact-list {
-  display: none;
-}
-
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -131,6 +127,11 @@ body {
 
 .logo-accent {
   color: var(--accent-color);
+}
+
+.nav-list,
+.header-contact-list {
+  display: none;
 }
 
 .mobile-menu-btn {

@@ -229,23 +229,74 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="ul-reset services__list">
             <li class="services__item">
-              <img
-                src="./images/site.jpg"
-                alt="руки на клавиатуре"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/desktop-app.webp    1x,
+                    ./images/services/desktop-app@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/services/desktop-app.jpg    1x,
+                    ./images/services/desktop-app@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/services/desktop-app.jpg"
+                  alt="руки на клавиатуре"
+                  width="370"
+                />
+              </picture>
+
               <p class="services__descr">Десктопные приложения</p>
             </li>
             <li class="services__item">
-              <img
-                src="./images/app.jpg"
-                alt="мобильный телефон в руках"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/mobile-app.webp    1x,
+                    ./images/services/mobile-app@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/services/mobile-app.jpg    1x,
+                    ./images/services/mobile-app@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/services/mobile-app.jpg"
+                  alt="мобильный телефон в руках"
+                  width="370"
+                />
+              </picture>
               <p class="services__descr">Мобильные приложения</p>
             </li>
             <li class="services__item">
-              <img src="./images/design.jpg" alt="палитра цветов" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/services/design.webp    1x,
+                    ./images/services/design@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/services/design.jpg    1x,
+                    ./images/services/design@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/services/design.jpg"
+                  alt="палитра цветов"
+                  width="370"
+                />
+              </picture>
+
               <p class="services__descr">Дизайнерские решения</p>
             </li>
           </ul>
