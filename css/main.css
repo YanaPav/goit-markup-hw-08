@@ -638,7 +638,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--text-color);
+  color: var(--icon-color);
   transition: background-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -699,6 +699,7 @@ body {
 @media screen and (max-width: 1199px) {
   .client__item {
     margin: 15px;
+    width: calc((100% - 15px*4) /2);
   }
 }
 
@@ -708,9 +709,16 @@ body {
   align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  width: 210px;
-  height: 92px;
+  width: 100%;
+  padding: 16px 0;
   color: var(--icon-color);
+  transition: border-color var(--transition-duration) var(--transition-timing-function), color var(--transition-duration) var(--transition-timing-function);
+}
+
+@media screen and (min-width: 480px) {
+  .client__link {
+    width: 210px;
+  }
 }
 
 .client__link:hover, .client__link:focus {
