@@ -303,51 +303,123 @@
         </div>
       </section>
 
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="ul-reset team-list">
-            <li class="list-item">
-              <img
-                src="./images/staff/demyanenko.jpg"
-                alt="Член команды"
-                width="270"
-              />
-              <div class="team-inner">
-                <h3 class="team-subtitle">Игорь Демьяненко</h3>
-                <p lang="en" class="team-descr">Product Designer</p>
+          <ul class="ul-reset team__list">
+            <li class="team__card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff/demyanenko-desk-w270.webp    1x,
+                    ./images/staff/demyanenko-desk-w270@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/demyanenko-desk-w270.jpg    1x,
+                    ./images/staff/demyanenko-desk-w270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/demyanenko-tab-w354.webp    1x,
+                    ./images/staff/demyanenko-tab-w354@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/demyanenko-tab-w354.jpg    1x,
+                    ./images/staff/demyanenko-tab-w354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/demyanenko-mob-w450.webp    1x,
+                    ./images/staff/demyanenko-mob-w450@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/demyanenko-mob-w450.jpg    1x,
+                    ./images/staff/demyanenko-mob-w450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
 
-                <ul class="ul-reset team-soc-links">
-                  <li class="list-item" aria-label="ссылка на Instagram">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                <img
+                  src="./images/staff/demyanenko-mob-w450.jpg"
+                  alt="Член команды"
+                />
+              </picture>
+
+              <div class="team__wrap">
+                <h3 class="team__subtitle">Игорь Демьяненко</h3>
+                <p lang="en" class="team__descr">Product Designer</p>
+
+                <ul class="ul-reset team__soc-set">
+                  <li class="team__soc-item" aria-label="ссылка на Instagram">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg
+                        class="team__soc-icon"
+                        width="20"
+                        height="20"
+                        width="20"
+                        height="20"
+                      >
                         <use
                           href="./images/icons/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Twitter">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Twitter">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg
+                        class="team__soc-icon"
+                        width="20"
+                        height="20"
+                        width="20"
+                        height="20"
+                      >
                         <use
                           href="./images/icons/sprite.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Facebook">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Facebook">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg
+                        class="team__soc-icon"
+                        width="20"
+                        height="20"
+                        width="20"
+                        height="20"
+                      >
                         <use
                           href="./images/icons/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Linkedin">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Linkedin">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg
+                        class="team__soc-icon"
+                        width="20"
+                        height="20"
+                        width="20"
+                        height="20"
+                      >
                         <use
                           href="./images/icons/sprite.svg#icon-linkedin"
                         ></use>
@@ -358,47 +430,95 @@
               </div>
             </li>
 
-            <li class="list-item">
-              <img
-                src="./images/staff/repina.jpg"
-                alt="Член команды"
-                width="270"
-              />
-              <div class="team-inner">
-                <h3 class="team-subtitle">Ольга Репина</h3>
-                <p lang="en" class="team-descr">Frontend Developer</p>
+            <li class="team__card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff/repina-desk-w270.webp    1x,
+                    ./images/staff/repina-desk-w270@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/repina-desk-w270.jpg    1x,
+                    ./images/staff/repina-desk-w270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/repina-tab-w354.webp    1x,
+                    ./images/staff/repina-tab-w354@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/repina-tab-w354.jpg    1x,
+                    ./images/staff/repina-tab-w354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/repina-mob-w450.webp    1x,
+                    ./images/staff/repina-mob-w450@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/repina-mob-w450.jpg    1x,
+                    ./images/staff/repina-mob-w450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
 
-                <ul class="ul-reset team-soc-links">
-                  <li class="list-item" aria-label="ссылка на Instagram">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                <img
+                  src="./images/staff/repina-mob-w450.jpg"
+                  alt="Член команды"
+                />
+              </picture>
+
+              <div class="team__wrap">
+                <h3 class="team__subtitle">Ольга Репина</h3>
+                <p lang="en" class="team__descr">Frontend Developer</p>
+
+                <ul class="ul-reset team__soc-set">
+                  <li class="team__soc-item" aria-label="ссылка на Instagram">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Twitter">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Twitter">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Facebook">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Facebook">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Linkedin">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Linkedin">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-linkedin"
                         ></use>
@@ -409,47 +529,94 @@
               </div>
             </li>
 
-            <li class="list-item">
-              <img
-                src="./images/staff/tarasov.jpg"
-                alt="Член команды"
-                width="270"
-              />
-              <div class="team-inner">
-                <h3 class="team-subtitle">Николай Тарасов</h3>
-                <p lang="en" class="team-descr">Marketing</p>
+            <li class="team__card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff/tarasov-desk-w270.webp    1x,
+                    ./images/staff/tarasov-desk-w270@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/tarasov-desk-w270.jpg    1x,
+                    ./images/staff/tarasov-desk-w270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/tarasov-tab-w354.webp    1x,
+                    ./images/staff/tarasov-tab-w354@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/tarasov-tab-w354.jpg    1x,
+                    ./images/staff/tarasov-tab-w354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/tarasov-mob-w450.webp    1x,
+                    ./images/staff/tarasov-mob-w450@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/tarasov-mob-w450.jpg    1x,
+                    ./images/staff/tarasov-mob-w450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
 
-                <ul class="ul-reset team-soc-links">
-                  <li class="list-item" aria-label="ссылка на Instagram">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                <img
+                  src="./images/staff/tarasov-mob-w450.jpg"
+                  alt="Член команды"
+                />
+              </picture>
+              <div class="team__wrap">
+                <h3 class="team__subtitle">Николай Тарасов</h3>
+                <p lang="en" class="team__descr">Marketing</p>
+
+                <ul class="ul-reset team__soc-set">
+                  <li class="team__soc-item" aria-label="ссылка на Instagram">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Twitter">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Twitter">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Facebook">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Facebook">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Linkedin">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Linkedin">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-linkedin"
                         ></use>
@@ -460,47 +627,94 @@
               </div>
             </li>
 
-            <li class="list-item">
-              <img
-                src="./images/staff/ermakov.jpg"
-                alt="Член команды"
-                width="270"
-              />
-              <div class="team-inner">
-                <h3 class="team-subtitle">Михаил Ермаков</h3>
-                <p lang="en" class="team-descr">UI Designer</p>
+            <li class="team__card">
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff/ermakov-desk-w270.webp    1x,
+                    ./images/staff/ermakov-desk-w270@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/ermakov-desk-w270.jpg    1x,
+                    ./images/staff/ermakov-desk-w270@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/ermakov-tab-w354.webp    1x,
+                    ./images/staff/ermakov-tab-w354@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/ermakov-tab-w354.jpg    1x,
+                    ./images/staff/ermakov-tab-w354@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/ermakov-mob-w450.webp    1x,
+                    ./images/staff/ermakov-mob-w450@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/staff/ermakov-mob-w450.jpg    1x,
+                    ./images/staff/ermakov-mob-w450@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
 
-                <ul class="ul-reset team-soc-links">
-                  <li class="list-item" aria-label="ссылка на Instagram">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                <img
+                  src="./images/staff/ermakov-mob-w450.jpg"
+                  alt="Член команды"
+                />
+              </picture>
+              <div class="team__wrap">
+                <h3 class="team__subtitle">Михаил Ермаков</h3>
+                <p lang="en" class="team__descr">UI Designer</p>
+
+                <ul class="ul-reset team__soc-set">
+                  <li class="team__soc-item" aria-label="ссылка на Instagram">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Twitter">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Twitter">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Facebook">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Facebook">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="list-item" aria-label="ссылка на Linkedin">
-                    <a href="" class="link-reset link">
-                      <svg class="link-icon">
+                  <li class="team__soc-item" aria-label="ссылка на Linkedin">
+                    <a href="" class="link-reset team__soc-link">
+                      <svg class="team__soc-icon" width="20" height="20">
                         <use
                           href="./images/icons/sprite.svg#icon-linkedin"
                         ></use>
@@ -512,7 +726,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- <section class="section clients">
         <div class="container">
