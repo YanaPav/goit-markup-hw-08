@@ -89,15 +89,17 @@ body {
 .section-title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.17;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .section-title {
     font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -680,6 +682,58 @@ body {
   }
   .team__card {
     width: calc((100% - 30px*3) /4);
+  }
+}
+
+.client__list {
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .client__list {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .client__item {
+    margin: 15px;
+  }
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  width: 210px;
+  height: 92px;
+  color: var(--icon-color);
+}
+
+.client__link:hover, .client__link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.client__icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: 170px;
+  }
+  .client__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
