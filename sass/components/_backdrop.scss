@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
     top: 0;
+    overflow: scroll;
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity var(--transition-duration) var(--transition-timing-function);
@@ -35,6 +36,11 @@
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    @media screen and (max-height: 608px) {
+        top: 0;
+        transform: translate(-50%, 0) scale(1)
     }
 }
 
