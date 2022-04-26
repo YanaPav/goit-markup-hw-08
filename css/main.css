@@ -167,6 +167,7 @@ body {
   visibility: hidden;
   pointer-events: none;
   transform: scale(0.8);
+  z-index: 2;
   transition: opacity var(--transition-duration) var(--transition-timing-function), transform var(--transition-duration) var(--transition-timing-function);
 }
 
