@@ -134,6 +134,15 @@
         margin: 15px;
     }
 
+    .portfolio__link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio__inner-wrapper {
+        flex-grow: 1;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {

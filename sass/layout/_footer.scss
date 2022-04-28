@@ -7,14 +7,17 @@
     display: block;
     color: var(--secondary-text-color);
     margin-bottom: 20px;
-
-    @media screen and (max-width: 1199px) {
-        text-align: center;
-    }
+  
 }
 
-.footer__contact-thumb {
-    margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+    .footer__logo {
+        text-align: center;
+    }
+
+    .footer__contact-thumb {
+        margin-bottom: 60px;
+    }
 }
 
 .footer__address {
@@ -24,7 +27,10 @@
     line-height: 1.17;   
     letter-spacing: 0.03em;    
     color: var(--secondary-text-color);
-    margin-bottom: 60px;
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
 
     @media screen and (max-width: 1199px){
         text-align: center;        
